@@ -60,6 +60,7 @@ folder instead of downloading all of them to reduce the load. -->
 		<!-- Toast notifications -->
 		<link type="text/css" rel="stylesheet" href="exface/vendor/exface/AdminLteTemplate/Template/js/animate.css/animate.min.css"/>
 		<script type="text/javascript" src="exface/vendor/exface/AdminLteTemplate/Template/js/remarkable-bootstrap-notify/bootstrap-notify.min.js"></script>
+
 		
 		<!-- AdminLTE helper functions -->
 		<script src="exface/vendor/exface/AdminLteTemplate/Template/js/template.js" type="text/javascript"></script>
@@ -92,7 +93,7 @@ folder instead of downloading all of them to reduce the load. -->
 		<script type="text/javascript" src="exface/vendor/bower-asset/imagesloaded/imagesloaded.pkgd.min.js"></script>
 		<script src="exface/vendor/bower-asset/masonry/dist/masonry.pkgd.min.js" type="text/javascript"></script>
 		
-		[!ExFace? &function=`headers`!]	
+		[!ExFace? &action=`exface.Core.ShowHeaders`!]	
 		
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -130,7 +131,25 @@ folder instead of downloading all of them to reduce the load. -->
 									</li>
 									
 								</ul>
-							</li>							
+							</li>
+							<!-- Favorite objects -->
+							<li class="dropdown favorites-menu">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" onclick="pinnedObjectsRefresh('#exf-favorites-list', '#exf-favorites-counter');">
+									<i class="fa fa-star"></i>
+									<span id="exf-favorites-counter" class="label label-warning">0</span>
+								</a>
+								<ul class="dropdown-menu">
+									<li class="header">User favorites</li>
+									<li>
+										<!-- inner menu: contains the actual data -->
+										<ul class="menu" id="exf-favorites">
+											
+										</ul>
+									</li>
+									
+								</ul>
+							</li>
+							
 							<!-- User Account: style can be found in dropdown.less -->
 							<li class="dropdown user user-menu">
 								
