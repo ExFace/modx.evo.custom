@@ -1,7 +1,7 @@
 /**
- * AdminLTE
+ * Responsive (AdminLTE)
  *
- * Default template for ExFace based on AdminLTE and Bootstrap
+ * Responsive template for ExFace based on AdminLTE and Bootstrap
  *
  * @category	template
  * @version 	1.0
@@ -266,7 +266,7 @@ folder instead of downloading all of them to reduce the load. -->
 				<!-- Main content -->
 				<section class="content">
 					<div class="row exfContainer">
-							[[ExFace]]
+							[[ExFace? &fallback_field=`content`]]
 						<div class="col-xs-12 col-md-4" id="exfColumnSizer"></div>
 					</div>
 				</section><!-- /.content -->
