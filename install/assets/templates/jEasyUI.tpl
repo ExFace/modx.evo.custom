@@ -27,6 +27,7 @@
 	<link rel="stylesheet" type="text/css" href="exface/vendor/exface/JEasyUiTemplate/Template/js/template.css">
 	<script type="text/javascript" src="exface/vendor/bower-asset/jquery/jquery.min.js"></script>
 	<script type="text/javascript" src="exface/vendor/bower-asset/jeasyui/jquery.easyui.min.js"></script>
+	<script type="text/javascript" src="exface/vendor/exface/JEasyUiTemplate/Template/js/template.js"></script>
 	<script type="text/javascript" src="exface/vendor/exface/JEasyUiTemplate/Template/js/jquery.easyui.helpers.js"></script>
 	<script type="text/javascript" src="exface/vendor/exface/JEasyUiTemplate/Template/js/jeasyui/extensions/datagridview/datagrid-groupview.js"></script>
 	
