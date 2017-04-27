@@ -15,7 +15,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>alexa > [*pagetitle*]</title>
+		<title>[*pagetitle*] :: [(site_name)]</title>
 		<meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
 		<meta name="HandheldFriendly" content="True">
 		<meta name="MobileOptimized" content="240"/>

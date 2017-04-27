@@ -13,7 +13,7 @@
 <!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.2//EN" "http://www.openmobilealliance.org/tech/DTD/xhtml-mobile12.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
-		<base href="[(site_url)]"></base>
+	<base href="[(site_url)]"></base>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="HandheldFriendly" content="True">
 	<meta name="MobileOptimized" content="240"/>
@@ -22,7 +22,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     
 	<meta http-equiv="Content-Type" content="text/html; charset=[(modx_charset)]" />
-	<title>alexa | [*pagetitle*]</title>
+	<title>[*pagetitle*] :: [(site_name)]</title>
 	
 	<!--<link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico" />
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />-->

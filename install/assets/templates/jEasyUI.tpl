@@ -21,12 +21,13 @@
     <link rel="apple-touch-icon" sizes="128x128" href="assets/images/alexa_icon_128.png">
     <link rel="apple-touch-icon-precomposed" sizes="128x128" href="assets/images/alexa_icon_128.png">
 	
-	<title>alexa - [*pagetitle*]</title>
+	<title>[*pagetitle*] :: [(site_name)]</title>
 	<link rel="stylesheet" type="text/css" href="exface/vendor/exface/JEasyUiTemplate/Template/js/jeasyui/themes/metro-blue/easyui.css">
 	<link rel="stylesheet" type="text/css" href="exface/vendor/exface/JEasyUiTemplate/Template/js/icon.css">
 	<link rel="stylesheet" type="text/css" href="exface/vendor/exface/JEasyUiTemplate/Template/js/template.css">
 	<script type="text/javascript" src="exface/vendor/bower-asset/jquery/jquery.min.js"></script>
 	<script type="text/javascript" src="exface/vendor/bower-asset/jeasyui/jquery.easyui.min.js"></script>
+	<script type="text/javascript" src="exface/vendor/exface/JEasyUiTemplate/Template/js/jquery.easyui.patch.js"></script>
 	<script type="text/javascript" src="exface/vendor/exface/JEasyUiTemplate/Template/js/template.js"></script>
 	<script type="text/javascript" src="exface/vendor/exface/JEasyUiTemplate/Template/js/jquery.easyui.helpers.js"></script>
 	<script type="text/javascript" src="exface/vendor/exface/JEasyUiTemplate/Template/js/jeasyui/extensions/datagridview/datagrid-groupview.js"></script>
