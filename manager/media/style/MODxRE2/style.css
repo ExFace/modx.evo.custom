@@ -141,7 +141,7 @@ blockquote {
   padding-bottom: 20px;
 }
 
-td{vertical-align:top;}
+td,td[valign=top]{vertical-align:top;} 
 
 /* -------------------------[ Miscellaneous conveniences ]--- */
 
@@ -3276,7 +3276,7 @@ ul.elements_buttonbar .fa {font-size: 13px!important; padding:1px 1px 0; }
 .switchForm .optionsFontsSize {margin-left:9px;padding-left:8px;border-left:1px solid #ededed;}
 .switchForm .optionsReset {margin-left:8px;border-left:1px solid #ededed;padding-left:8px;}
 .switchForm .optionsAllTabs {clear:left;padding-top:10px;}
-.switchForm .optionsClear {display:block;clear: both; padding-top:8px;margin-bottom:4px;border-bottom: 1px solid #ededed;}}
+.switchForm .optionsClear {display:block;clear: both; padding-top:8px;margin-bottom:4px;border-bottom: 1px solid #ededed;}
 
 /* Checkbox "Icons" */
 .noicons.tab-page ul li ul li a:before,
@@ -3960,3 +3960,15 @@ fieldset[disabled] .btn-default.focus {
 }
 
 .border-bottom { border-bottom:2px solid #3697CD !important; }
+
+/*responsive buttons*/
+
+.actionButtons .fa {display:none;}
+.searchbar .actionButtons .fa {display:inline-block;}
+.optionsTitle .fa {display: inline-block;}
+@media (max-width: 900px) {
+	.actionButtons a {display: inline-block; padding: 6px 10px;margin-top:-7px}
+    .tab-page .actionButtons a {margin-top:0!important}
+	.actionButtons a span { display: none;}
+	.actionButtons a .fa {display:inline-block;}
+}

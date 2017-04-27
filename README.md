@@ -1,6 +1,30 @@
 Сайт сборки: http://modx.com.ua
 
 Актуальная версия: https://github.com/dmi3yy/modx.evo.custom/releases
+1.2.1-d9.1.3  (18.04.2017)
+=======================================================
+- добавленна новая тема MODxRE2 dropdownMenu (пока не по умолчанию)
+- ajax поиск по админке в том числе и по элементам (в теме MODxRE2 dropdownMenu)
+- Обновлен DocLister
+- Обновлен FormLister 
+- исправлен баг с https, теперь в site_url пишется коректно с https
+- исправлена ошибка с параметрами из модуля в плагин
+- .json добавлен в исключения для alias
+- Fix siblings templates
+- Refactor for DLBuildMenu. Less mysql queries
+- Fix admin role for access to category manager
+- fix for aliaslistingfolder no need check for docAlias for search id
+
+1.2.1-d9.1.2  (21.03.2017)
+=======================================================
+- delete (Wayfinder) use DLBuildMenu
+- delete (Breadcrumbs) use DLcrumbs
+- delete (Ditto) use DocLister
+- delete (eForm) use FormLister (for SHK http://modx.im/blog/questions/4888.html#comment40634)
+- Fix empty params on install (assets/)
+- H1 - H3 in tinyMCE4 by default
+- fix Cattegory for access
+- 9.1.1 (all from off Evolution)
 
 
 1.2.1-d9.1.0  (11.01.2017)
