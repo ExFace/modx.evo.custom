@@ -877,7 +877,7 @@ INSERT IGNORE INTO `{PREFIX}system_settings`
 ('server_offset_time','0'),
 ('manager_language','{MANAGERLANGUAGE}'),
 ('modx_charset','UTF-8'),
-('site_name','MODX Site By Dmi3yy'),
+('site_name','ExFace'),
 ('site_start','1'),
 ('error_page','1'),
 ('unauthorized_page','1'),
@@ -888,9 +888,9 @@ INSERT IGNORE INTO `{PREFIX}system_settings`
 ('publish_default','1'),
 ('friendly_urls','1'),
 ('friendly_alias_urls','1'),
-('use_alias_path','1'),
-('failed_login_attempts','3'),
-('blocked_minutes','60'),
+('use_alias_path','0'),
+('failed_login_attempts','5'),
+('blocked_minutes','30'),
 ('use_captcha','0'),
 ('captcha_words','0,1,2,3,4,5,6,7,8,9'),
 ('emailsender','{ADMINEMAIL}'),
@@ -913,8 +913,8 @@ INSERT IGNORE INTO `{PREFIX}system_settings`
 ('warning_visibility', '0'),
 ('remember_last_tab', '1'),
 ('enable_bindings', '1'),
-('seostrict', '1'),
-('cache_type', '2'),
+('seostrict', '0'),
+('cache_type', '1'),
 ('theme_refresher','');
 
 REPLACE INTO `{PREFIX}user_roles` 
