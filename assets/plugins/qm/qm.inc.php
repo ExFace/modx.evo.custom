@@ -119,6 +119,25 @@ class Qm {
                 }
                 
                 break;
+                
+            // Delete document
+            case 'OnDocFormDelete':
+            	
+            	// Deletion process for Qm only
+            	if(intval($_REQUEST['quickmanager']) == 1) {
+            		// Clear cache
+            		$this->clearCache();
+            		
+            		// Different doc to be refreshed than the one we are editing?
+            		if (isset($_REQUEST['qmrefresh'])) {
+            			$id = intval($_REQUEST['qmrefresh']);
+            		}
+            		
+            		// Redirect to clearer page which refreshes parent window and closes modal box frame
+            		$this->modx->sendRedirect($this->modx->config['base_url'].'index.php?id='.$id.'&quickmanagerclose=1', 0, 'REDIRECT_HEADER', 'HTTP/1.1 301 Moved Permanently');
+            	}
+            	
+            	break;
             
             // Display page in front-end
             case 'OnWebPagePrerender':
@@ -350,6 +369,14 @@ class Qm {
                         </li>
                         ';
                         
+                        // BOF Delete button by aka
+                        $deleteButton = '
+                        <li class="qmDelete">
+                        <a class="qmButton qmDelete colorbox" href="'.$this->modx->config['site_manager_url'].'/index.php?a=6&amp;id='.$docID.'&amp;quickmanager=1&amp;qmrefresh='.$doc['parent'].'"><span> '.$_lang['delete_resource'].'</span></a>
+                        </li>
+                        ';
+                        // EOF Delete button by aka
+                        
                         // Check if user has manager access to current document
                         $access = $this->checkAccess();
                         
@@ -366,7 +393,10 @@ class Qm {
                             
                             // Does user have permissions to add document
                             if($this->modx->hasPermission('new_document')) $controls .= $addButton;        
-                        }            
+                        }
+                        
+                        // Add delete button to controls
+                        if($access) $controls .= $deleteButton;
                         
                         // Custom add buttons if not empty and enough permissions
                         if ($this->custombutton != '') {  
