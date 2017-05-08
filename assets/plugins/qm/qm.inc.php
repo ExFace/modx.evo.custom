@@ -369,13 +369,20 @@ class Qm {
                         </li>
                         ';
                         
-                        // BOF Delete button by aka
+                        // Delete button by aka
                         $deleteButton = '
                         <li class="qmDelete">
                         <a class="qmButton qmDelete colorbox" href="'.$this->modx->config['site_manager_url'].'/index.php?a=6&amp;id='.$docID.'&amp;quickmanager=1&amp;qmrefresh='.$doc['parent'].'"><span> '.$_lang['delete_resource'].'</span></a>
                         </li>
                         ';
-                        // EOF Delete button by aka
+                        
+                        // Delete button by aka
+                        $sortButton = '
+                        <li class="qmSort">
+                        <a class="qmButton qmSort colorbox" href="'.$this->modx->config['site_manager_url'].'/index.php?a=56&amp;id='.$docID.'&amp;quickmanager=1"><span> '.$_lang['sort_menuindex'].'</span></a>
+                        </li>
+                        ';
+                        
                         
                         // Check if user has manager access to current document
                         $access = $this->checkAccess();
@@ -397,6 +404,9 @@ class Qm {
                         
                         // Add delete button to controls
                         if($access) $controls .= $deleteButton;
+                        
+                        // Add sort button to controls
+                        if($access) $controls .= $sortButton;
                         
                         // Custom add buttons if not empty and enough permissions
                         if ($this->custombutton != '') {  
