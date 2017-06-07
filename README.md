@@ -1,6 +1,18 @@
 Сайт сборки: http://modx.com.ua
 
 Актуальная версия: https://github.com/dmi3yy/modx.evo.custom/releases
+1.2.1-d9.1.5  (22.05.2017)
+=======================================================
+- refactor onManagerNodePrerender (now can full castomize tree, only for MODxRE_dropdownMenu)
+- update IF 
+- update DocLister to 2.3.1
+- update DLBuildMenu to 1.2
+- alias_visible fix - select children of hidden parents when building cache
+- Fix install check db version
+- update tinyMCE to 4.6.1
+
+
+
 1.2.1-d9.1.4  (02.05.2017)
 =======================================================
 - MODxRE2 dropdownMenu , обновленна все иконки FA, убраны 2 фрейма с дерева и меню
