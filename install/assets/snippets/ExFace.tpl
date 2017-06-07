@@ -12,4 +12,4 @@
  * @internal    @installset base, sample
  */
 
-return require MODX_BASE_PATH.'assets/snippets/../../exface/vendor/exface/ModxCmsConnector/snippet.exface.php';
+return require MODX_BASE_PATH.'assets/snippets/../../exface/vendor/exface/ModxCmsConnector/modx/snippets/exface/snippet.exface.php';

@@ -1,7 +1,7 @@
 ﻿/**
- * mm_rules
+ * Login_AdminLTE
  *
- * Default ManagerManager rules.
+ * Login chunk for ExFace AdminLTE template.
  *
  * @category	chunk
  * @version 	1.0
