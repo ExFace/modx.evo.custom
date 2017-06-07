@@ -873,7 +873,7 @@ REPLACE INTO `{PREFIX}user_roles`
 INSERT IGNORE INTO `{PREFIX}system_settings` 
 (setting_name, setting_value) VALUES 
 ('settings_version',''),
-('manager_theme','MODxRE2'),
+('manager_theme','MODxRE2_DropdownMenu'),
 ('server_offset_time','0'),
 ('manager_language','{MANAGERLANGUAGE}'),
 ('modx_charset','UTF-8'),
@@ -914,7 +914,7 @@ INSERT IGNORE INTO `{PREFIX}system_settings`
 ('remember_last_tab', '1'),
 ('enable_bindings', '1'),
 ('seostrict', '0'),
-('cache_type', '1'),
+('cache_type', '2'),
 ('theme_refresher','');
 
 REPLACE INTO `{PREFIX}user_roles` 
