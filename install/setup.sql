@@ -889,10 +889,10 @@ INSERT IGNORE INTO `{PREFIX}system_settings`
 ('friendly_urls','1'),
 ('friendly_alias_urls','1'),
 ('use_alias_path','0'),
+('cache_type','2'),
 ('failed_login_attempts','5'),
 ('blocked_minutes','30'),
 ('use_captcha','0'),
-('captcha_words','0,1,2,3,4,5,6,7,8,9'),
 ('emailsender','{ADMINEMAIL}'),
 ('use_editor','1'),
 ('use_browser','1'),
@@ -914,7 +914,6 @@ INSERT IGNORE INTO `{PREFIX}system_settings`
 ('remember_last_tab', '1'),
 ('enable_bindings', '1'),
 ('seostrict', '0'),
-('cache_type', '2'),
 ('theme_refresher','');
 
 REPLACE INTO `{PREFIX}user_roles` 
@@ -1108,10 +1107,10 @@ UPDATE `{PREFIX}user_roles` SET
 
 
 UPDATE `{PREFIX}user_settings` SET
-  `setting_value`='MODxRE2'
+  `setting_value`='MODxRE2_DropdownMenu'
   WHERE `setting_name`='manager_theme';
 
 
-REPLACE INTO `{PREFIX}system_settings` (setting_name, setting_value) VALUES ('manager_theme','MODxRE2');
+REPLACE INTO `{PREFIX}system_settings` (setting_name, setting_value) VALUES ('manager_theme','MODxRE2_DropdownMenu');
 
 UPDATE `{PREFIX}system_settings` set setting_value = if(setting_value REGEXP 'application/json',setting_value,concat_ws(",",setting_value,"application/json")) WHERE setting_name='custom_contenttype';

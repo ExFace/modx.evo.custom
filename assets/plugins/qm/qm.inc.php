@@ -549,6 +549,10 @@ class Qm {
                             .butttext {display:none}
                             .butticon {display:inline!important}
                             #qmEditor, #qmEditorClosed {height: 48px!important;}
+                            #qmEditor .qmButton.qmClose {padding: 7px 15px 11px 10px;}
+                            #qmLogoClose {padding: 5px 0 0 10px!important;}
+                            #qmEditorClosed {padding: 10px 0 5px 10px!important;}
+                            #qmEditor li {line-height:38px!important}
                             }
                             @media only screen 
                             and (min-device-width: 768px) 
@@ -573,6 +577,11 @@ class Qm {
                             .butttext {display:none}
                             .butticon {display:inline!important}
                             #qmEditor, #qmEditorClosed {height: 48px!important;}
+                            #qmEditor, #qmEditorClosed { left:0; top: -38px; width: 100%;}
+                            #qmEditor .qmButton.qmClose {padding: 7px 15px 11px 10px;}
+                            #qmLogoClose {padding: 5px 0 0 10px!important;}
+                            #qmEditorClosed {padding: 10px 0 5px 10px!important;}
+                            #qmEditor li {line-height:38px!important}
                             }
                             @media only screen 
                             and (min-device-width: 768px) 
@@ -597,6 +606,10 @@ class Qm {
                             .butttext {display:none}
                             .butticon {display:inline!important}
                             #qmEditor, #qmEditorClosed {height: 48px!important;}
+                            #qmEditor .qmButton.qmClose {padding: 7px 15px 11px 10px;}
+                            #qmLogoClose {padding: 5px 0 0 10px!important;}
+                            #qmEditorClosed {padding: 10px 0 5px 10px!important;}
+                            #qmEditor li {line-height:38px!important}
                             }
                             @media only screen 
                             and (min-device-width: 768px) 
@@ -614,13 +627,18 @@ class Qm {
                         if (($this->autohide == 'true') && ($this->position == 'bottom')) {
                             $css .= '
                             <style type="text/css">
-                            #qmEditor, #qmEditorClosed { left:0; bottom: -28px; width: 100%;}
+                            #qmEditor, #qmEditorClosed { left:0; bottom: -30px; width: 100%;}
                             #qmEditor:hover, #qmEditorClosed:hover {bottom: 0px;}
                             .butticon {display:none}
                             @media only screen and (max-width: 728px) {
                             .butttext {display:none}
                             .butticon {display:inline!important}
                             #qmEditor, #qmEditorClosed {height: 48px!important;}
+                            #qmEditor, #qmEditorClosed { left:0; bottom: -38px; width: 100%;}
+                            #qmEditor .qmButton.qmClose {padding: 7px 15px 11px 10px;}
+                            #qmLogoClose {padding: 5px 0 0 10px!important;}
+                            #qmEditorClosed {padding: 10px 0 5px 10px!important;}
+                            #qmEditor li {line-height:38px!important}
                             }
                             @media only screen 
                             and (min-device-width: 768px) 
@@ -645,6 +663,10 @@ class Qm {
                             .butttext {display:none}
                             .butticon {display:inline!important}
                             #qmEditor, #qmEditorClosed {height: 48px!important;}
+                            #qmEditor .qmButton.qmClose {padding: 7px 15px 11px 10px;}
+                            #qmLogoClose {padding: 5px 0 0 10px!important;}
+                            #qmEditorClosed {padding: 10px 0 5px 10px!important;}
+                            #qmEditor li {line-height:38px!important}
                             }
                             @media only screen 
                             and (min-device-width: 768px) 
@@ -872,9 +894,9 @@ class Qm {
                         $head .= "
                         <script>
                         // Assure keeping session and related locks alive
-                        $(document).ready(function($) {
+                        $".$jvar."(document).ready(function($".$jvar.") {
                             function updateMODXsession() {
-                              $.ajax({ url: '".MODX_MANAGER_URL."index.php', method:'post', data:{'updateMsgCount':true},
+                              $".$jvar.".ajax({ url: '".MODX_MANAGER_URL."index.php', method:'post', data:{'updateMsgCount':true},
                                 success: function(data) {},
                                 complete: function() {
                                   setTimeout(updateMODXsession, ". ($this->modx->config['mail_check_timeperiod'] * 1000) .");
