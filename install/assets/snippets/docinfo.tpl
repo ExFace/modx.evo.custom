@@ -2,7 +2,7 @@
 /**
  * DocInfo
  * 
- * Берем любое поле из любого документа (меньше запросов по сравнению с GetField)
+ * Get any field of any document
  *
  * @category 	snippet
  * @version 	1
